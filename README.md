@@ -1,8 +1,12 @@
 # CSS Grid
 
+## Live Demo
+
+Check out the project here: [Open Website](https://kakbi.github.io/css-grid/src/index.html)
+
 ## Before we start
 
-1. This practical task is verified automatically with tests. 
+1. This practical task is verified automatically with tests.
 2. Please, put all your `CSS` code to the `src/style.css` file. If you use any other file, we would not be able to verify it.
 3. Please, don't change the page structure, it may affect tests.
 
@@ -21,46 +25,50 @@ Please, note you MUST add all CSS rules in the `src/style.css` file and not chan
 
 ### Add proper CSS Grid rules to required html elements to match mockups
 
-   #### Create page skeleton with grid
-   - Add `grid-template-columns` property to `body` to make it 12-columns grid, where each column is 1 fraction width. Use `repeat` function.
-   - Add `grid-template-rows` property to `body` to divide layout into 3 rows. Rows height should be `auto`. Use `repeat` function.
-   - Add named `grid-area` to: `header`, `footer`, `main` and `aside`. Grid area names should be `header, footer, main, sidebar`.
-   - Add `grid-template-areas` property to `body` to place grid items according to schema. Pay attantion that you should use given grid area names.
+#### Create page skeleton with grid
 
-   ![page skeleton](images/page-sceletont.PNG)
+- Add `grid-template-columns` property to `body` to make it 12-columns grid, where each column is 1 fraction width. Use `repeat` function.
+- Add `grid-template-rows` property to `body` to divide layout into 3 rows. Rows height should be `auto`. Use `repeat` function.
+- Add named `grid-area` to: `header`, `footer`, `main` and `aside`. Grid area names should be `header, footer, main, sidebar`.
+- Add `grid-template-areas` property to `body` to place grid items according to schema. Pay attantion that you should use given grid area names.
 
-   #### Style "Client Stories" section
-   - Make `div` in `.client_stories` to display as a 3-columns grid. Each column should have width 320px. Use `repeat` function.
-   - Place first grid item in Client Stories section to match mockup below. Apply `grid-column-start`, `grid-column-end`, `grid-row-start`, `grid-row-end` properties.
-    
-   ![mockup for grid items placement](images/client-stories-items-placement.PNG)
+![page skeleton](images/page-sceletont.PNG)
 
-   - In `.client_stories > div` selector add use `gap` or `grid-gap` property to add spaces between rows ONLY. Space size should be `calc(var(--space-size)*2)`.
-   - Align grid items in `.client_stories > div` selector to reduce extra space at the right.
+#### Style "Client Stories" section
 
-   What you have now:
+- Make `div` in `.client_stories` to display as a 3-columns grid. Each column should have width 320px. Use `repeat` function.
+- Place first grid item in Client Stories section to match mockup below. Apply `grid-column-start`, `grid-column-end`, `grid-row-start`, `grid-row-end` properties.
 
-   ![mockup for grid items alignment in "Client stories" section](images/client-stories-alignment-before.PNG)
+![mockup for grid items placement](images/client-stories-items-placement.PNG)
 
-   What you should have after proper grid-items alignment:
+- In `.client_stories > div` selector add use `gap` or `grid-gap` property to add spaces between rows ONLY. Space size should be `calc(var(--space-size)*2)`.
+- Align grid items in `.client_stories > div` selector to reduce extra space at the right.
 
-   ![mockup for grid items alignment in "Client stories" section](images/client-stories-alignment-after.PNG)
+What you have now:
 
-   #### Style "Features" section
-   - Make `div` in `.features` section to display as a 3-columns grid without any spaces between columns and rows. Use proper units to define colunms width: columns should grow and shrink according to the available space. All columns should have the same width. Use `repeat` function.
-   - Order grid items in Features section properly.
-   - Place grid items in Features section according to mockup. Apply `grid-column-start`, `grid-column-end`, `grid-row-start`, `grid-row-end` properties for proper selectors.
+![mockup for grid items alignment in "Client stories" section](images/client-stories-alignment-before.PNG)
 
-   ![mockup for grid items placement in "Features" section](images/features-grid-items-placement.PNG)
+What you should have after proper grid-items alignment:
 
-   #### Style sidebar
-   - Align items in sidebar according to schema below
+![mockup for grid items alignment in "Client stories" section](images/client-stories-alignment-after.PNG)
 
-   ![mockup for grid items placement in "Features" section](images/sidebar_schema.PNG)
+#### Style "Features" section
 
-  #### Combine CSS Grid and CSS Flexbox layout
-  - Make first grid item of Client Stories section flexible.
-  - Align content in created flex container to match provided design
+- Make `div` in `.features` section to display as a 3-columns grid without any spaces between columns and rows. Use proper units to define colunms width: columns should grow and shrink according to the available space. All columns should have the same width. Use `repeat` function.
+- Order grid items in Features section properly.
+- Place grid items in Features section according to mockup. Apply `grid-column-start`, `grid-column-end`, `grid-row-start`, `grid-row-end` properties for proper selectors.
 
-  ![mockup for flex container in "Client stories" section](images/flexbox_in_client_stories.PNG)
+![mockup for grid items placement in "Features" section](images/features-grid-items-placement.PNG)
 
+#### Style sidebar
+
+- Align items in sidebar according to schema below
+
+![mockup for grid items placement in "Features" section](images/sidebar_schema.PNG)
+
+#### Combine CSS Grid and CSS Flexbox layout
+
+- Make first grid item of Client Stories section flexible.
+- Align content in created flex container to match provided design
+
+![mockup for flex container in "Client stories" section](images/flexbox_in_client_stories.PNG)
